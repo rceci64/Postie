@@ -12,8 +12,8 @@ from email.mime.multipart import MIMEMultipart
 Change these to your credentials and name
 '''
 
-your_name = "Fes-te Jove Manlleu"
-your_email = "festejovemanlleu@gmail.com"
+your_name = ""
+your_email = ""
 your_password = ""
 
 '''
@@ -40,7 +40,8 @@ client = gspread.authorize(creds)
 while 1:
 
   # get the instance of the Spreadsheet
-  sheet = client.open('Registre Xarrups de Fes-te Jove - Nit 07/08/21 (respostes)')
+  #sheet = client.open('Registre Xarrups de Fes-te Jove - Nit 07/08/21 (respostes)')
+  sheet = client.open('')
 
   # get the first sheet of the Spreadsheet
   sheet_instance = sheet.get_worksheet(0)
